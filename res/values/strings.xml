@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="tempText">Temp:</string>
+    <string name="humidityText">Humidity:</string>
+    <string name="forecast">Forecast</string>
+    <string name="current">Current</string>
+    <string name="hourly">Hourly</string>
+    <string name="toolbar">Toolbar</string>\
+    <string name="location">Location:</string>
+    <string name="max">Max:</string>
+    <string name="min">Min:</string>
+    <string name="description">Description:</string>
+    <string name="cloud">Cloud: </string>
+    <string name="date">Date:</string>
+    <string name="search">Search Location</string>
+</resources>

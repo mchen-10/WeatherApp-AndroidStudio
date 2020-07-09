@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_button"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/hourlyMenu"
+        android:title="@string/hourly"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/forecastMenu"
+        android:title="@string/forecast"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/units"
+        android:title="Units"
+        app:showAsAction="never">
+        <menu>
+            <item
+            android:id="@+id/fahrenheit"
+            android:title="Imperial"/>
+            <item
+            android:id="@+id/celsius"
+            android:title="Metric"/>
+        </menu>
+    </item>
+</menu>

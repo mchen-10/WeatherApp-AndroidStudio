@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF82B1FF">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="147"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:stretchColumns="0,1,2,3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/locationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/dateVal0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/descripText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/descripVal0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/textTemp0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tempVal0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day1extra"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/textMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:text="@string/max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/maxVal0"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:textColor="#120742" />
+
+            <TextView
+                android:id="@+id/textMin0"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:text="@string/min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/minVal0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day2"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/dateVal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/descripText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/descripVal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/textTemp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tempVal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day2Extra"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/textMax1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:text="@string/max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/maxVal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:textColor="#120742" />
+
+            <TextView
+                android:id="@+id/textMin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:text="@string/min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/minVal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day3"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/dateVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/descripText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/descripVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/textTemp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tempVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day3Extra"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/textMax2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:text="@string/max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/maxVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:textColor="#120742" />
+
+            <TextView
+                android:id="@+id/textMin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/minVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/dateVal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/descripText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/descripVal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/textTemp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tempVal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/textMax3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:text="@string/max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/maxVal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:textColor="#120742" />
+
+            <TextView
+                android:id="@+id/textMin3"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:text="@string/min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/minVal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day5"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/dateVal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/descripText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/descripVal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/textTemp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tempVal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/day5Extra"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25">
+
+            <TextView
+                android:id="@+id/textMax4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:text="@string/max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/maxVal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:textColor="#120742" />
+
+            <TextView
+                android:id="@+id/textMin4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:text="@string/min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/minVal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#120742" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background= "#003399"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="147"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#00000000" />
+
+            <TextView
+                android:id="@+id/locationValue"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/dateVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#00000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/descripVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/weatherImage"
+                android:layout_width="145dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/description"
+                android:scaleType="centerInside"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47dp">
+
+            <TextView
+                android:id="@+id/textTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tempVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textMax"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#000000"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/maxVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/minVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humidityText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/humidityVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cloud"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#00000000" />
+
+            <TextView
+                android:id="@+id/cloudVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
